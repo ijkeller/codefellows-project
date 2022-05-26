@@ -7,10 +7,11 @@ document.addEventListener('keyup', removePressed);
 function addPressed(e) {
     if ((document.getElementById(`${e.code}`)) === 'Tab') {
         console.log(`${e.code}`)
-        e.preventDefault() } 
+        e.preventDefault()
+    }
     if ((document.getElementById(`${e.code}`)) === 'Qoute') {
         e.preventDefault()
-    } 
+    }
     if ((document.getElementById(`${e.code}`)) === 'Slash') {
         e.preventDefault()
     }
@@ -28,8 +29,8 @@ function removePressed(e) {
 
 // ---------------------------------------
 
-document.querySelector("textarea").addEventListener('keydown',function(e) {
-    if(e.keyCode === 9) { // tab was pressed
+document.querySelector("textarea").addEventListener('keydown', function (e) {
+    if (e.keyCode === 9) { // tab was pressed
         // get caret position/selection
         var start = this.selectionStart;
         var end = this.selectionEnd;
@@ -39,8 +40,8 @@ document.querySelector("textarea").addEventListener('keydown',function(e) {
 
         // set textarea value to: text before caret + tab + text after caret
         target.value = value.substring(0, start)
-                    + "\t"
-                    + value.substring(end);
+            + "\t"
+            + value.substring(end);
 
         // put caret at right position again (add one for the tab)
         this.selectionStart = this.selectionEnd = start + 1;
@@ -48,7 +49,7 @@ document.querySelector("textarea").addEventListener('keydown',function(e) {
         // prevent the focus lose
         e.preventDefault();
     }
-},false);
+}, false);
 
 // ---------------------------------------
 
