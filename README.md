@@ -6,16 +6,18 @@ Isaiah Keller
 
 Thank you for your interest in this project.  I decided to work on another feature to a previous product at MVP.  The overall project is a coding based typing tutor.  This app feature is a keyboard that shows keys pressed on screen.
 
+ - [Deployed Page](https://ijkeller.github.io/codefellows-project/) 
+ - [Github Link](https://github.com/ijkeller/codefellows-project)
 
 ***
 
 ### Versions
 
-- v1 - Keyboard displayed properly on screen
-- v2 - creating button pushdown effect on hover in css
-- v3 - adding in js to log keydown and keyup events, adding id's to all keys in html to match the js key id's.
-- v4, MVP - adding textarea to page to show text entered.
-- V5, Post-MVP - further css to make the keyboard effects pop more.
+- V1 - Keyboard displayed properly on screen
+- V2 - creating button pushdown effect on hover in css
+- V3 - adding in js to log keydown and keyup events, adding id's to all keys in html to match the js key id's.
+- V4 - MVP - adding textarea to page to show text entered.
+- V5 - Post-MVP - further css to make the keyboard effects pop more.
 
 ***
 
