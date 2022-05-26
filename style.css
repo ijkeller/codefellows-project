@@ -70,12 +70,15 @@ ul {
 li {
     color: white;
     font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5rem;
     background-color: rgba(255, 255, 255, .2);
     box-shadow: var(--var-key-height) 5px;
     border: 1px solid white;
     border-radius: 4px;
-    padding: 10px;
+    padding: auto;
     margin:1px;
     text-align: center;
     
@@ -83,6 +86,11 @@ li {
     transition: opacity 250ms ease-in-out,
                 box-shadow 250ms ease-in-out,
                 transform 250ms ease-in-out;
+}
+
+.row-5 {
+    display: flex;
+    justify-content: center;
 }
 
 li:hover,
@@ -94,6 +102,7 @@ li:hover,
 
 .space {
     width: 40%;
+    padding: .35rem;
 }
 
 .alt, .ctrl, .back, .shift {
