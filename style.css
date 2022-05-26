@@ -1,0 +1,115 @@
+*, 
+*::before, 
+*::after {
+    box-sizing: border-box;
+    list-style: none;
+    --var-key-height: 3px 3px;
+}
+
+*:focus {
+    /* outline: none; */
+    outline: 2px solid rgb(237, 14, 14);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 99vw;
+    height: 99vh;
+}
+
+.text-container,
+.keyboard-container {
+    border: 2px solid rgb(89, 89, 89);
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+    max-width: 1500px;
+    margin-bottom: 1rem;
+}
+
+.text-container {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+.text-box {
+    width: 98%;
+    height: 95%;
+    border: none;
+    resize: none;
+    font-size: 1.5rem;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+}
+
+.keyboard {
+    border: 2px solid rgb(89, 89, 89);
+    border-radius: 10px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: 5;
+    background-color: rgb(104, 104, 104);
+}
+
+.rows {
+    padding: 0;
+    margin: 5px;
+}
+
+ul {
+  list-style-type: none;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+li {
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, .2);
+    box-shadow: var(--var-key-height) 5px;
+    border: 1px solid white;
+    border-radius: 4px;
+    padding: 10px;
+    margin:1px;
+    text-align: center;
+    
+    width: 5%;
+    transition: opacity 250ms ease-in-out,
+                box-shadow 250ms ease-in-out,
+                transform 250ms ease-in-out;
+}
+
+li:hover,
+.pressed {
+    opacity: .8;
+    box-shadow: none;
+    transform: translate(var(--var-key-height))
+}
+
+.space {
+    width: 40%;
+}
+
+.alt, .ctrl, .back, .shift {
+    width: 12.5%;
+}
+
+.tab, .or {
+    width: 8%;
+}
+
+.caps, .enter {
+    width: 10%;
+}
+
+.caps, .back {
+    font-size: 1.25rem;
+}
+
