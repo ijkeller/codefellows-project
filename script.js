@@ -6,6 +6,7 @@ document.addEventListener('keyup', removePressed);
 
 function addPressed(e) {
     if ((document.getElementById(`${e.code}`)) === 'Tab') {
+        console.log(`${e.code}`)
         e.preventDefault() } 
     if ((document.getElementById(`${e.code}`)) === 'Qoute') {
         e.preventDefault()
