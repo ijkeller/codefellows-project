@@ -5,12 +5,17 @@ document.addEventListener('keydown', addPressed);
 document.addEventListener('keyup', removePressed);
 
 function addPressed(e) {
-    e.preventDefault()
-    console.log(`${e.code}`)
+    if ((document.getElementById(`${e.code}`)) === 'Tab') {
+        e.preventDefault() } 
+    if ((document.getElementById(`${e.code}`)) === 'Qoute') {
+        e.preventDefault()
+    } 
+    if ((document.getElementById(`${e.code}`)) === 'Slash') {
+        e.preventDefault()
+    }
     document.getElementById(`${e.code}`).classList.add("pressed");
 }
 
 function removePressed(e) {
-    console.log(`${e.code}`)
     document.getElementById(`${e.code}`).classList.remove("pressed");
 }
