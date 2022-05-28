@@ -16,6 +16,15 @@ body {
     height: 99vh;
     overflow: hidden;
     padding: auto;
+    --var-gradient: linear-gradient(
+        45deg, 
+        #845ec2,
+        #d65db1,
+        #ff6f91,
+        #ff9671,
+        #ffc75f,
+        #f9f871
+        );
 }
 
 .text-container,
@@ -93,12 +102,9 @@ li {
     font-size: 1.5rem;
     background-color: rgba(255, 255, 255, .2);
     box-shadow: var(--var-key-height) 5px;
-    border: 1px solid white;
     border-radius: 4px;
-    padding: auto;
     margin:1px;
     text-align: center;
-    
     width: 5%;
     transition: opacity 250ms ease-in-out,
                 box-shadow 250ms ease-in-out,
